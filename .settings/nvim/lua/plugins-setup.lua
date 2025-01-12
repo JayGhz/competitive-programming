@@ -7,4 +7,10 @@ return require('packer').startup(function(use)
     -- Nvim tree
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-tree/nvim-web-devicons'
+
+    --Coc
+    use {
+        'neoclide/coc.nvim',
+        branch = 'release'
+    }
 end)
