@@ -46,7 +46,7 @@ public:
 int main() {
     miPila<int> pila(5);
     pila.push(13);
-    pila.push(21;
+    pila.push(21);
     pila.push(32);
     pila.push(12);
 

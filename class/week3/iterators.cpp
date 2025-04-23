@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -56,7 +55,7 @@ int main() {
     miVector<float> v(5, 1.5);
     
     for (auto elem : v) {
-        cout << *it << " ";
+        cout << elem << " ";
     }
     
     return 0;
