@@ -1,0 +1,29 @@
+{
+	"Competitive Programming Template": {
+		"prefix": "cpt",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"",
+			"using namespace std;",
+			"",
+			"#define int long long",
+			"#define all(x) (x).begin(), (x).end()",
+			"#define fast ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);",
+			"",
+			"void solve() {",
+			"    ${1}",
+			"}",
+			"",
+			"int32_t main() {",
+			"    fast;",
+			"    int t;",
+			"    cin >> t;",
+			"    while (t--) {",
+			"        solve();",
+			"    }",
+			"    return 0;",
+			"}"
+		],
+		"description": "Template for Competitive Programming"
+	}
+}
