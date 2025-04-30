@@ -1,9 +1,7 @@
 #include <iostream>
-#include <vector>
 #include <math.h>
 #include <cstdint>
 #include <queue>
-#include <algorithm>
 
 using namespace std;
 
