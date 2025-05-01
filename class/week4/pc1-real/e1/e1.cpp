@@ -12,21 +12,17 @@ using namespace std;
 
 void solve() {
     int n;
-    cin >> n;
-    if (n == 0) {
-        return;
-    }
     int max_presupuesto = 5000000;
 
-    vector<int> matriz_A(n);
-    for (int i = 0; i < n; i++) {
-        cin >> matriz_A[i];
+    vector<int> matriz_A;
+    while (cin >> n && n != 0) {
+        matriz_A.push_back(n);
     }
 
     sort(all(matriz_A), greater<int>()); // ordenamos el vector en orden descendente
 
     int suma = 0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < matriz_A.size(); i++) {
         suma += 2 * pow(matriz_A[i], i + 1);
     }
 
@@ -34,6 +30,7 @@ void solve() {
 
     if (suma > max_presupuesto) {
         cout << "Too expensive" << endl;
+        return;
     }
 }
 
