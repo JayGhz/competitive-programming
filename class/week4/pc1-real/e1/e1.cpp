@@ -14,24 +14,20 @@ void solve() {
     int n;
     int max_presupuesto = 5000000;
 
-    vector<int> matriz_A;
-    while (cin >> n && n != 0) {
-        matriz_A.push_back(n);
-    }
+ 
 
     sort(all(matriz_A), greater<int>()); // ordenamos el vector en orden descendente
 
     int suma = 0;
     for (int i = 0; i < matriz_A.size(); i++) {
         suma += 2 * pow(matriz_A[i], i + 1);
+        if (suma > max_presupuesto) {
+            cout << "Too expensive" << endl;
+            return;
+        }
     }
 
     cout << suma << endl;
-
-    if (suma > max_presupuesto) {
-        cout << "Too expensive" << endl;
-        return;
-    }
 }
 
 int32_t main() {
