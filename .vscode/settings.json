@@ -4,7 +4,8 @@
         "iosfwd": "cpp"
     },
     "symbols.files.associations": {
-        "*.txt": "text"
-
+        "*.txt": "text",
+        "*.in": "text",
+        "*.out": "shell"
     }
 }
